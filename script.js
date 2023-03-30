@@ -1,4 +1,4 @@
-console.log("I love Mango")
+
 // Things we need
 // Need to track: 
 
@@ -49,12 +49,15 @@ function compareUserComputerChoice(){
          alert("Computer won!")
     }
     //alert("Wins ") 
+        alert("Total Wins: " + wins + " Losses: " + losses + " Ties: " + ties);
 }
 
 //Start the game
 function startGame(){
     promptUser();
     generateComputerChoice();
+    compareUserComputerChoice();
+    promptUser();
 }
 
 startGame();
