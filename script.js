@@ -18,7 +18,7 @@ var computerChoice;
 var continueGame = true;
 //Things we need to do - actions
 function generateComputerChoice(){
-    Math.random * 3
+    Math.random()* 3
 }
 //Start the game
 while (continueGame){
