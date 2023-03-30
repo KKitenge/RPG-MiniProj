@@ -49,26 +49,18 @@ startGame();
             //Compare user and computer choices
                 //Conditions on wins, losses and ties.
                     //If User P 
-                            //If Computer P then
-                                //Tie +1
-                            //If computer R then
-                                //User Wins +1
+                               
                             //If computer S then
                                 //User loss +1
                     //If User R 
                             //If Computer P then
                                 //User loss +1
-                            //If computer R then
-                                //Tie +1
-                            //If computer S then
-                                //User Win +1
+
                     //If User S 
-                            //If Computer P then
-                                //User Win +1
+
                             //If computer R then
                                 //User Loss +1
-                            //If computer S then
-                                //Tie +1
+
    //Show an alert of wins, losses and ties 
    //Ask the user if they want to continue the game or not - confirm
         //If yes, jump to line 15. This provides a loop.
@@ -76,3 +68,11 @@ startGame();
 
         //If no, alert the game is over                      
 
+//if User-choice == computer-choice
+    //It is a tie, tie+1
+//else if((user p && computer R) ||
+//  (user r && computer s) ||
+//  (user s && computer p)) then
+//      User wins, wins+1
+// else
+   // computers wins, loss +1
