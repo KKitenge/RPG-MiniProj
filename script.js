@@ -33,6 +33,24 @@ function promptUser(){
     }
 }
 
+function compareUserComputerChoice(){
+    if (userInput == computerChoice){
+        ties++;
+        alert("It's a tie!")
+    }   
+    else if((userInput == "P" && computerChoice == "R") ||
+            (userInput == "R" && computerChoice == "S") ||
+            (userInput == "S" && computerChoice == "P")) {
+            wins++;
+            alert("You've won!")
+            }
+    else {
+         losses++;
+         alert("Computer won!")
+    }
+    //alert("Wins ") 
+}
+
 //Start the game
 function startGame(){
     promptUser();
@@ -68,11 +86,3 @@ startGame();
 
         //If no, alert the game is over                      
 
-//if User-choice == computer-choice
-    //It is a tie, tie+1
-//else if((user p && computer R) ||
-//  (user r && computer s) ||
-//  (user s && computer p)) then
-//      User wins, wins+1
-// else
-   // computers wins, loss +1
