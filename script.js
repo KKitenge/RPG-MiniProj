@@ -58,35 +58,13 @@ function startGame(){
     promptUser();
     generateComputerChoice();
     compareUserComputerChoice();
-    
+    if (confirm("Do you want to continue?") == true) {
+        startGame();
+    } else { 
+        alert("Total Wins: " + wins + "\nLosses: " + losses + "\nTies: " + ties);
+    }
 }
 
 startGame();
 
       
-            //Generate computer choice
-
-                //should radomly choose a character, R, P or S 
-            //Alert the user to what the computer has chosen
-            //Compare user and computer choices
-                //Conditions on wins, losses and ties.
-                    //If User P 
-                               
-                            //If computer S then
-                                //User loss +1
-                    //If User R 
-                            //If Computer P then
-                                //User loss +1
-
-                    //If User S 
-
-                            //If computer R then
-                                //User Loss +1
-
-   //Show an alert of wins, losses and ties 
-   //Ask the user if they want to continue the game or not - confirm
-        //If yes, jump to line 15. This provides a loop.
-
-
-        //If no, alert the game is over                      
-
