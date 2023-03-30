@@ -48,8 +48,9 @@ function compareUserComputerChoice(){
          losses++;
          alert("Computer won!")
     }
-    //alert("Wins ") 
-        alert("Total Wins: " + wins + " Losses: " + losses + " Ties: " + ties);
+    
+        alert("Total Wins: " + wins + "\nLosses: " + losses + "\nTies: " + ties);
+    
 }
 
 //Start the game
@@ -57,7 +58,7 @@ function startGame(){
     promptUser();
     generateComputerChoice();
     compareUserComputerChoice();
-    promptUser();
+    
 }
 
 startGame();
